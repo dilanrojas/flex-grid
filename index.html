@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Furniture Warehouse</title>
+  <script src='./main.js' defer></script>
   <link href="./style.css" rel="stylesheet">
 </head>
 
@@ -12,6 +13,7 @@
   <header class="pm-header">
     <div class="pm-header-wrapper wrapper">
       <span class="logo">TRADE</span>
+
       <nav class="pm-header-nav">
         <ul class="pm-header-nav-list">
           <li><a href="#"><span>Link 1</span></a></li>
@@ -19,14 +21,35 @@
           <li><a href="#"><span>Link 3</span></a></li>
           <li><a href="#"><span>Link 4</span></a></li>
         </ul>
+
         <button class="button button-outline"><span>Sign Up</span></button>
+
+        <button class="hamburguer button">
+          <span class="open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-menu preview-icon">
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </span>
+          <span class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-x preview-icon">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </span>
+        </button>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <article class="hero-article">
+      <article class="hero-article wrapper">
         <h1>Ready to get started?</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.</p>
@@ -36,8 +59,8 @@
       </button>
 
     </section>
-    <section class="features wrapper">
-      <article class="features-article">
+    <section class="features">
+      <article class="features-article wrapper">
         <h2>Your Best Value Proposition</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam</p>
@@ -102,33 +125,35 @@
         </ul>
       </article>
 
-      <ul class="footer-product-list">
-        <h5>Product</h5>
-        <li><a href="#"><span>Product</span></a></li>
-        <li><a href="#"><span>Product</span></a></li>
-        <li><a href="#"><span>Product</span></a></li>
-      </ul>
+      <nav class="pm-footer-nav">
+        <ul class="pm-footer-product-list">
+          <h5>Product</h5>
+          <li><a href="#"><span>Product</span></a></li>
+          <li><a href="#"><span>Product</span></a></li>
+          <li><a href="#"><span>Product</span></a></li>
+        </ul>
 
-      <ul class="footer-features-list">
-        <h5>Product</h5>
-        <li><a href="#"><span>Features</span></a></li>
-        <li><a href="#"><span>Features</span></a></li>
-        <li><a href="#"><span>Features</span></a></li>
-      </ul>
+        <ul class="pm-footer-features-list">
+          <h5>Product</h5>
+          <li><a href="#"><span>Features</span></a></li>
+          <li><a href="#"><span>Features</span></a></li>
+          <li><a href="#"><span>Features</span></a></li>
+        </ul>
 
-      <ul class="footer-resources-list">
-        <h5>Resources</h5>
-        <li><a href="#"><span>Resources</span></a></li>
-        <li><a href="#"><span>Resources</span></a></li>
-        <li><a href="#"><span>Resources</span></a></li>
-      </ul>
+        <ul class="pm-footer-resources-list">
+          <h5>Resources</h5>
+          <li><a href="#"><span>Resources</span></a></li>
+          <li><a href="#"><span>Resources</span></a></li>
+          <li><a href="#"><span>Resources</span></a></li>
+        </ul>
 
-      <ul class="footer-company-list">
-        <h5>Company</h5>
-        <li><a href="#"><span>Company</span></a></li>
-        <li><a href="#"><span>Company</span></a></li>
-        <li><a href="#"><span>Company</span></a></li>
-      </ul>
+        <ul class="pm-footer-company-list">
+          <h5>Company</h5>
+          <li><a href="#"><span>Company</span></a></li>
+          <li><a href="#"><span>Company</span></a></li>
+          <li><a href="#"><span>Company</span></a></li>
+        </ul>
+      </nav>
 
     </div>
   </footer>
